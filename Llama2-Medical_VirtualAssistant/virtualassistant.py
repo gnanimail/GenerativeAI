@@ -30,8 +30,7 @@ def set_custom_prompt():
 # load fundational model
 def load_llm():
     # local the localy downloaded foundational model
-    llm = CTransformers(#model="G:\\Python Practice\\FoundationModels\\llama-2-7b-chat.ggmlv3.q8_0.bin",
-                        model="TheBloke/Llama-2-7B-Chat-GGML",
+    llm = CTransformers(model="TheBloke/Llama-2-7B-Chat-GGML",
                         model_type="llama",
                         max_new_tokens=512,
                         temperature=0.3)
